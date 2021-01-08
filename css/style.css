@@ -1,0 +1,264 @@
+:root {
+    /*COLORS*/
+    --off-white: #FAF8F7;
+    --dark-blue: #222831;
+    --strong-grey: #393e46;
+    --soft-blue: #00adb5;
+    --soft-grey: #eeeeee;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(20, 20, 20);
+}
+.logo {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.logo img {
+    margin: 0 auto 0 5px;
+    width: 50px;
+    height: 50px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.logo p {
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.menu li {
+    list-style: none;
+    margin: auto 2px;
+    font-size: 12px;
+    text-align: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+.nav-link:hover {
+    color: blue;
+}
+main {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.presentation {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background: linear-gradient(43deg, #393e46 0%, #00adb5 46%, #eeeeee 100%);
+}
+.presentation-logo {
+    display: inline-block;
+    align-self: center;
+    width: 300px;
+    height: 150px;
+    margin: 80px auto 100px auto;
+    background: url(../assets/icons/presentationLogo.png)center/cover no-repeat;
+}
+.presentation-cards {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--dark-blue);
+}
+.cards-intro {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.cards-intro__title {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--off-white);
+}
+.cards-intro p {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.cards-container__detail {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--strong-grey);
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.cards-container__detail .icon-card {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.celestial {
+    background: url(../assets/icons/tftCelestial.png)center/cover no-repeat;
+}
+.battlecast {
+    background: url(../assets/icons/tftBattleCast.png)center/cover no-repeat;
+}
+.rebel {
+    background: url(../assets/icons/tftRebelLogo.png)center/cover no-repeat;
+}
+.astro {
+    background: url(../assets/icons/tftAstro.png)center/cover no-repeat;
+}
+.cards-container__detail h3 {
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--off-white);
+}
+.cards-container__detail p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.sign-section {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    background: linear-gradient(43deg, #393e46 0%, #00adb5 46%, #eeeeee 100%);
+    align-items: center;
+}
+.sign-section__box {
+    padding-top: 50px;
+}
+.sign-section__box .signin-icon {
+    display: inline-block;
+    width: 150px;
+    height: 170px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.sign-section__box p {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-bottom: 20px;
+    color: var(--off-white);
+}
+.penguin {
+    background: url(../assets/icons/tftPenguin.png)center/cover no-repeat;
+}
+.sign-email {
+    background-color: var(--soft-blue);
+    border: 1px solid var(--off-white);
+    color: var(--dark-blue);
+    border-radius: 20px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+    width: 70%;
+    height: 25px;
+    margin: 0 auto;
+    outline: none;
+}
+::placeholder {
+    color: var(--off-white);
+    opacity: 1;
+}
+.sign-buttom {
+    border-radius: 20px;
+    width: 75px;
+    height: 25px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--strong-grey);
+    color: var(--off-white);
+}
+.video-section {
+    background-color: var(--off-grey);
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.footer-menu ul {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-right: 20px;
+    color: var(--off-white);
+}
+.footer-uwu {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.footer-uwu p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    margin-top: 20px;
+    margin-right: 5px;
+    color: var(--off-white);
+}
